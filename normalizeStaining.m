@@ -35,7 +35,8 @@ function [Inorm, H, E] = normalizeStaining(I, Io, beta, alpha, HERef, maxCRef)
 
 % transmitted light intensity
 if ~exist('Io', 'var') || isempty(Io)
-    Io = 240;
+    Io = 261; %Axio scan
+    Io = 240; %Original
 end
 
 % OD threshold for transparent pixels
